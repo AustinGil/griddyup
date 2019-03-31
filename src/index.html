@@ -1,6 +1,6 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="./css/griddyup.css" />
+    <link rel="stylesheet" type="text/css" href="griddyup.scss" />
     <style>
       .bg1 {
         background: red;
@@ -9,16 +9,44 @@
         background: blue;
       }
     </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/prism/1.6.0/themes/prism-okaidia.css"
+    />
   </head>
   <body>
-    <h1>griddyup</h1>
-    <div class="grid grid-gap align-center grid-2-columns@md">
-      <div class="bg1">1</div>
-      <div class="bg2">
-        2
-        <br />
-        <br />
-      </div>
+    <h1>Griddyup!</h1>
+    <h4>A super tiny CSS grid framework built on CSS grid.</h4>
+    <p>Q: If we already have CSS grid, why do we need a grid framework?</p>
+    <p>
+      A: Because it gets old repeating the same styles for various grids, and
+      this framework is only <strong>1.63kb (even smaller gzipped)</strong>.
+    </p>
+
+    <h3>Tell the grid how many columns it should be</h3>
+
+    <pre class="language-html"><code class="language-html">
+&lt;div class="grid grid-2-columns"&gt;
+    &lt;span class=&quot;bg1&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;bg2&quot;&gt;2&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+    <div class="grid grid-2-columns">
+      <span class="bg1">1</span>
+      <span class="bg2">2</span>
+    </div>
+
+    <h3>Standard Use:</h3>
+
+    <pre class="language-html"><code class="language-html">
+&lt;div class="grid grid-2-columns"&gt;
+    &lt;span class=&quot;bg1&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;bg2&quot;&gt;2&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+    <div class="grid grid-2-columns">
+      <span class="bg1">1</span>
+      <span class="bg2">2</span>
     </div>
   </body>
 </html>

@@ -22,15 +22,15 @@ $xl: 1200px;
   align-items: center;
 }
 
-.grid-2-columns {
+.columns-2 {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.grid-3-columns {
+.columns-3 {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.grid-4-columns {
+.columns-4 {
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -47,15 +47,15 @@ $xl: 1200px;
 }
 
 @media (min-width: $sm) {
-  .grid-2-columns\@sm {
+  .columns-2\@sm {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .grid-3-columns\@sm {
+  .columns-3\@sm {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .grid-4-columns\@sm {
+  .columns-4\@sm {
     grid-template-columns: repeat(4, 1fr);
   }
 
@@ -73,15 +73,15 @@ $xl: 1200px;
 }
 
 @media (min-width: $md) {
-  .grid-2-columns\@md {
+  .columns-2\@md {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .grid-3-columns\@md {
+  .columns-3\@md {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .grid-4-columns\@md {
+  .columns-4\@md {
     grid-template-columns: repeat(4, 1fr);
   }
 
@@ -99,15 +99,15 @@ $xl: 1200px;
 }
 
 @media (min-width: $lg) {
-  .grid-2-columns\@lg {
+  .columns-2\@lg {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .grid-3-columns\@lg {
+  .columns-3\@lg {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .grid-4-columns\@lg {
+  .columns-4\@lg {
     grid-template-columns: repeat(4, 1fr);
   }
 
@@ -125,15 +125,15 @@ $xl: 1200px;
 }
 
 @media (min-width: $xl) {
-  .grid-2-columns\@xl {
+  .columns-2\@xl {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .grid-3-columns\@xl {
+  .columns-3\@xl {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .grid-4-columns\@xl {
+  .columns-4\@xl {
     grid-template-columns: repeat(4, 1fr);
   }
 
