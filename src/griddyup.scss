@@ -1,25 +1,26 @@
-$gap: 24px;
-$sm: 480px;
-$md: 736px;
-$lg: 980px;
-$xl: 1200px;
+@import "variables";
+@import "mixins";
 
-.grid {
+.display-grid {
   display: grid;
 }
 
 .column-gap,
 .grid-gap {
-  grid-column-gap: $gap;
+  grid-column-gap: $gap1;
 }
 
 .row-gap,
 .grid-gap {
-  grid-row-gap: $gap;
+  grid-row-gap: $gap1;
 }
 
 .align-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-items: center;
 }
 
 .columns-2 {
@@ -34,6 +35,23 @@ $xl: 1200px;
   grid-template-columns: repeat(4, 1fr);
 }
 
+.columns-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.columns-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+// TODO
+// grid-column-start: <number> | <name> | span <number> | span <name> | auto;
+// grid-column-end: <number> | <name> | span <number> | span <name> | auto;
+// grid-row-start: <number> | <name> | span <number> | span <name> | auto;
+// grid-row-end: <number> | <name> | span <number> | span <name> | auto;
+// justify-self: start | end | center | stretch
+// align-self: start | end | center | stretch;
+// place-self
+
 .column-span-2 {
   grid-column: span 2;
 }
@@ -46,7 +64,19 @@ $xl: 1200px;
   grid-column: span 4;
 }
 
-@media (min-width: $sm) {
+.column-span-5 {
+  grid-column: span 5;
+}
+
+.column-span-6 {
+  grid-column: span 6;
+}
+
+@include breakpoint(sm) {
+  .display-grid\@sm {
+    display: grid;
+  }
+
   .columns-2\@sm {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -57,6 +87,14 @@ $xl: 1200px;
 
   .columns-4\@sm {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .columns-5\@sm {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .columns-6\@sm {
+    grid-template-columns: repeat(6, 1fr);
   }
 
   .column-span-2\@sm {
@@ -70,9 +108,21 @@ $xl: 1200px;
   .column-span-4\@sm {
     grid-column: span 4;
   }
+
+  .column-span-5\@sm {
+    grid-column: span 5;
+  }
+
+  .column-span-6\@sm {
+    grid-column: span 6;
+  }
 }
 
-@media (min-width: $md) {
+@include breakpoint(md) {
+  .display-grid\@md {
+    display: grid;
+  }
+
   .columns-2\@md {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -83,6 +133,14 @@ $xl: 1200px;
 
   .columns-4\@md {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .columns-5\@md {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .columns-6\@md {
+    grid-template-columns: repeat(6, 1fr);
   }
 
   .column-span-2\@md {
@@ -96,9 +154,21 @@ $xl: 1200px;
   .column-span-4\@md {
     grid-column: span 4;
   }
+
+  .column-span-5\@md {
+    grid-column: span 5;
+  }
+
+  .column-span-6\@md {
+    grid-column: span 6;
+  }
 }
 
-@media (min-width: $lg) {
+@include breakpoint(lg) {
+  .display-grid\@lg {
+    display: grid;
+  }
+
   .columns-2\@lg {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -109,6 +179,14 @@ $xl: 1200px;
 
   .columns-4\@lg {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .columns-5\@lg {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .columns-6\@lg {
+    grid-template-columns: repeat(6, 1fr);
   }
 
   .column-span-2\@lg {
@@ -122,9 +200,21 @@ $xl: 1200px;
   .column-span-4\@lg {
     grid-column: span 4;
   }
+
+  .column-span-5\@lg {
+    grid-column: span 5;
+  }
+
+  .column-span-6\@lg {
+    grid-column: span 6;
+  }
 }
 
-@media (min-width: $xl) {
+@include breakpoint(xl) {
+  .display-grid\@xl {
+    display: grid;
+  }
+
   .columns-2\@xl {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -137,6 +227,14 @@ $xl: 1200px;
     grid-template-columns: repeat(4, 1fr);
   }
 
+  .columns-5\@xl {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .columns-6\@xl {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
   .column-span-2\@xl {
     grid-column: span 2;
   }
@@ -147,5 +245,13 @@ $xl: 1200px;
 
   .column-span-4\@xl {
     grid-column: span 4;
+  }
+
+  .column-span-5\@xl {
+    grid-column: span 5;
+  }
+
+  .column-span-6\@xl {
+    grid-column: span 6;
   }
 }

@@ -1,1 +1,10 @@
-<html><head><link rel="stylesheet" type="text/css" href="/griddyup.css"><style>.bg1{background:red}.bg2{background:#00f}</style></head><body> <h1>griddyup</h1> <div class="grid grid-gap align-center grid-2-columns@md"> <div class="bg1">1</div> <div class="bg2"> 2 <br> <br> </div> </div> </body></html>
+<html><head><link rel="stylesheet" type="text/css" href="/griddyup.13b47af2.css"><style>.bg1{background:red}.bg2{background:#00f}</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/prism/1.6.0/themes/prism-okaidia.css"></head><body> <main> <header> <h1>Griddyup!</h1> <h4>A super tiny CSS grid framework built on CSS grid.</h4> <p>Q: If we already have CSS grid, why do we need a grid framework?</p> <p> A: Because it gets old repeating the same styles for various grids, and this framework is only <strong>1.88kb UNZIPPED</strong>. </p> </header> <section> <h3>Tell the grid how many columns it should be</h3> <pre class="language-html"><code class="language-html">&lt;div class="display-grid columns-2"&gt;
+  &lt;div class=&quot;bg1&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;bg2&quot;&gt;2&lt;/div&gt;
+&lt;/div&gt;</code></pre> <div class="display-grid columns-2"> <div class="bg1">1</div> <div class="bg2">2</div> </div> </section> <section> <h3>Standard Use:</h3> <pre class="language-html"><code class="language-html">&lt;div class="display-grid columns-2"&gt;
+  &lt;div class=&quot;bg1&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;bg2&quot;&gt;2&lt;/div&gt;
+&lt;/div&gt;</code></pre> <div class="display-grid columns-2"> <div class="bg1">1</div> <div class="bg2">2</div> </div> </section> <section> <h3>Responsive Breakpoints</h3> <pre class="language-html"><code class="language-html">&lt;div class="display-grid columns-2"&gt;
+  &lt;div class=&quot;bg1&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;bg2&quot;&gt;2&lt;/div&gt;
+&lt;/div&gt;</code></pre> <div class="display-grid@sm display-grid@md columns-2@sm columns-3@md columns-4@lg"> <div class="bg1">1</div> <div class="bg2">2</div> <div class="bg1">3</div> <div class="bg2">4</div> <div class="bg1">5</div> <div class="bg2">6</div> </div> </section> </main> </body></html>
